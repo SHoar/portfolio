@@ -307,6 +307,7 @@ footer .footer-above {
 }
 footer .footer-col {
   margin-bottom: 50px;
+  list-style-type: none;
 }
 footer .footer-below {
   padding: 25px 0;
