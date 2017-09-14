@@ -530,3 +530,8 @@ img#profile-pic {
 div#maincontent {
   outline: none;
 }
+@media screen and (min-width: 1024px) {
+   div .warning {
+     margin-top: -50px; 
+  }
+}
