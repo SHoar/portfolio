@@ -530,8 +530,13 @@ img#profile-pic {
 div#maincontent {
   outline: none;
 }
+div .warning-inner {
+     background-color:red;
+     color:white;
+ }
+
 @media screen and (min-width: 1025px) {
-   div .warning {
-     margin-top: -50px; 
+   div .warning-inner {
+     margin-top:100px;
   }
 }
