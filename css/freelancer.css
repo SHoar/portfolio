@@ -70,9 +70,6 @@ header {
   text-align: center;
   background: #18BC9C;
   color: white;
-  background-image: url('https://i.imgur.com/pqdICWJ.gifv');
-
-
 }
 header #maincontent {
     background-image: url('https://i.imgur.com/pqdICWJ.gifv');
@@ -430,7 +427,9 @@ fieldset[disabled] .btn-success.active {
     font-size: 1.5em;
 }
 img#profile-pic {
-      border-radius: 175px;
+    border: 6px solid white;
+    border-radius: 175px;
+    width: 200px;  
 }
 .scroll-top {
   position: fixed;
