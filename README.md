@@ -87,6 +87,39 @@ body {
 <h1 style={{ fontFamily: "'Montserrat', sans-serif" }}>Heading</h1>
 ```
 
+### Asset Handling for Deployment
+
+For proper asset handling with Vite and GitHub Pages:
+
+1. Configure the base path in `vite.config.ts`:
+   ```typescript
+   export default defineConfig({
+     plugins: [react()],
+     base: '/portfolio/', // Base path for GitHub Pages at username.github.io/portfolio/
+   })
+   ```
+
+2. Create an assets module for importing images:
+   ```typescript
+   // src/assets/index.ts
+   import profileImg from './images/IMG_3382.jpg';
+   
+   export const images = {
+     profile: profileImg,
+     // Other images...
+   };
+   ```
+
+3. Use imported images in components:
+   ```tsx
+   import { images } from '../assets';
+   
+   // Then in your JSX:
+   <img src={images.profile} alt="Profile" />
+   ```
+
+This approach ensures assets are properly handled in the build process and correctly referenced in the deployed application.
+
 ## Build
 
 To build the production version:
