@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #2D3748; /* text-gray-800 equivalent */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-6 text-center;
+  }
+  
+  .section-divider {
+    @apply w-24 h-1 bg-primary mx-auto my-6;
+  }
+  
+  .btn {
+    @apply inline-block px-6 py-3 font-medium rounded transition duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-opacity-90;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-white text-white hover:bg-white hover:text-secondary;
+  }
+}
