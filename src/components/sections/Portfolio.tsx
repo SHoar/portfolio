@@ -24,11 +24,12 @@ const Portfolio: React.FC = () => {
               <PortfolioCard
                 title={project.title}
                 company={project.company}
+                agency={project.agency}
                 dateRange={project.dateRange}
                 description={project.description}
                 technologies={project.technologies}
                 impact={project.impact}
-                image={project.image}
+                logoUrl={project.logoUrl}
                 link={project.link}
               />
             </div>

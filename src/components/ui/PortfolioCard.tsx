@@ -3,24 +3,29 @@ import React from 'react';
 interface PortfolioCardProps {
   title: string;
   company: string;
+  agency: string;
   dateRange: string;
   description: string;
   technologies: string[];
   impact: string;
-  image: string;
+  logoUrl: string;
   link: string;
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
   title,
   company,
+  agency,
   dateRange,
   description,
   technologies,
   impact,
-  image,
+  logoUrl,
   link
 }) => {
+  const [imageError, setImageError] = React.useState(false);
+  const showFallback = !logoUrl || imageError;
+
   return (
     <div className="portfolio-item h-full">
       <a 
@@ -30,17 +35,42 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         className="block h-full group"
       >
         <div className="glass-card overflow-hidden h-full flex flex-col">
-          <div className="relative overflow-hidden aspect-video">
-            <img 
-              src={image} 
-              alt={title} 
-              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary-600 via-primary-500/50 to-transparent 
+          <div className="relative overflow-hidden bg-gradient-to-br from-secondary-50 to-secondary-100 dark:from-secondary-800 dark:to-secondary-900 p-8 flex items-center justify-center aspect-video">
+            {!showFallback ? (
+              <img 
+                src={logoUrl} 
+                alt={`${agency} logo`} 
+                className="w-auto h-48 object-contain transform group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
+                crossOrigin="anonymous"
+                onError={() => {
+                  console.log(`Failed to load logo for ${agency}`);
+                  setImageError(true);
+                }}
+              />
+            ) : (
+              <div className="flex flex-col items-center justify-center space-y-2">
+                <div className="w-32 h-32 rounded-full bg-primary-200 dark:bg-primary-800 flex items-center justify-center">
+                  <span className="text-4xl font-bold text-primary-600 dark:text-primary-300">
+                    {(() => {
+                      // If agency is 2-4 characters and all caps, use as-is
+                      if (agency.length <= 4 && agency === agency.toUpperCase()) {
+                        return agency;
+                      }
+                      // Otherwise generate initials from words
+                      return agency.split(' ').map(word => word[0].toUpperCase()).join('').slice(0, 4);
+                    })()}
+                  </span>
+                </div>
+                <span className="text-xs text-secondary-600 dark:text-secondary-400 text-center max-w-xs">
+                  {agency}
+                </span>
+              </div>
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-primary-600/80 via-transparent to-transparent 
                           opacity-0 group-hover:opacity-100 transition-opacity duration-300 
-                          flex items-center justify-center">
+                          flex items-end justify-center pb-6">
               <div className="text-white text-center px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <div className="text-sm font-semibold mb-2 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full inline-block">
+                <div className="text-sm font-semibold px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full inline-block">
                   View Details →
                 </div>
               </div>
@@ -48,13 +78,18 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
           </div>
           <div className="p-6 flex-grow flex flex-col">
             <div className="mb-3">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-xs font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wide">
-                  {company}
+              <div className="flex flex-col gap-1 mb-3">
+                <span className="text-sm font-bold text-secondary-900 dark:text-white">
+                  {agency}
                 </span>
-                <span className="text-xs text-secondary-500 dark:text-secondary-400">
-                  {dateRange}
-                </span>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-medium text-primary-600 dark:text-primary-400 uppercase tracking-wide">
+                    via {company}
+                  </span>
+                  <span className="text-xs text-secondary-500 dark:text-secondary-400">
+                    {dateRange}
+                  </span>
+                </div>
               </div>
               <h3 className="font-bold text-xl text-secondary-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
                 {title}
