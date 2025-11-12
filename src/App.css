@@ -3,11 +3,14 @@
 #root {
   min-height: 100vh;
   position: relative;
+  /* Optimize rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Enhanced link styles with modern transitions */
 a {
-  @apply transition-all duration-300;
+  @apply transition-[color,background-color,border-color,opacity] duration-300;
 }
 
 /* Intersection Observer animation utilities */

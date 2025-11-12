@@ -11,9 +11,9 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-secondary-50 to-primary-50 dark:from-secondary-900 dark:to-secondary-950 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary-300 dark:bg-primary-900 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-72 h-72 bg-accent-cyan/30 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary-300 dark:bg-primary-900 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 left-10 w-72 h-72 bg-accent-cyan/30 rounded-full blur-2xl"></div>
       </div>
       
       <div className="container relative z-10">

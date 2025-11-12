@@ -4,9 +4,9 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-primary-50 to-accent-cyan/10 dark:from-secondary-900 dark:to-secondary-950 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 left-10 w-96 h-96 bg-primary-300/30 dark:bg-primary-900/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-cyan/20 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div className="absolute top-10 left-10 w-96 h-96 bg-primary-300/30 dark:bg-primary-900/30 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-cyan/20 rounded-full blur-2xl"></div>
       </div>
       
       <div className="container relative z-10">

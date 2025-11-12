@@ -15,6 +15,19 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  /* Performance optimizations */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+  
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -58,9 +71,10 @@
   /* Modern button styles */
   .btn {
     @apply inline-flex items-center justify-center px-8 py-4 font-semibold rounded-xl;
-    @apply transition-all duration-300 transform;
-    @apply hover:scale-105 active:scale-95;
+    @apply transition-[background-color,box-shadow,transform] duration-300;
+    @apply hover:-translate-y-0.5 active:translate-y-0;
     @apply shadow-lg hover:shadow-xl;
+    will-change: transform;
   }
   
   .btn-primary {
@@ -82,11 +96,12 @@
   
   /* Glassmorphism card effect */
   .glass-card {
-    @apply bg-white/80 dark:bg-secondary-800/80;
-    @apply backdrop-blur-xl border border-secondary-200/50 dark:border-secondary-700/50;
+    @apply bg-white/90 dark:bg-secondary-800/90;
+    @apply backdrop-blur-sm border border-secondary-200/50 dark:border-secondary-700/50;
     @apply rounded-2xl shadow-glass;
-    @apply transition-all duration-300;
-    @apply hover:shadow-2xl hover:scale-[1.02];
+    @apply transition-[box-shadow,border-color] duration-300;
+    @apply hover:shadow-2xl;
+    contain: layout style paint;
   }
   
   /* Modern gradient backgrounds */
@@ -117,12 +132,29 @@
   /* Enhanced section styles */
   section {
     @apply relative overflow-hidden;
+    contain: paint;
+    will-change: auto;
   }
   
   /* Profile image modern effect */
   .profile-image {
     @apply rounded-full border-4 border-white/30 shadow-2xl;
-    @apply backdrop-blur-sm transition-transform duration-300;
-    @apply hover:scale-105 hover:shadow-glow-lg;
+    @apply transition-shadow duration-300;
+    @apply hover:shadow-glow-lg;
+  }
+}
+
+@layer utilities {
+  /* Performance utilities */
+  .gpu-accelerate {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  .smooth-hover {
+    transition-property: opacity, box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

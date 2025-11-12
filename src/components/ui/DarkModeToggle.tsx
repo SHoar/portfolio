@@ -34,21 +34,21 @@ const DarkModeToggle: React.FC = () => {
     <button
       onClick={toggleDarkMode}
       className="relative inline-flex items-center justify-center p-2 rounded-lg 
-                 bg-white/10 dark:bg-white/5 backdrop-blur-sm
+                 bg-white/10 dark:bg-white/5
                  border border-white/20 dark:border-white/10
                  hover:bg-white/20 dark:hover:bg-white/10
-                 transition-all duration-300 group"
+                 transition-[background-color,border-color] duration-300"
       aria-label="Toggle dark mode"
     >
       <div className="relative w-6 h-6">
         <SunIcon 
-          className={`absolute inset-0 w-6 h-6 text-yellow-400 transition-all duration-300 ${
-            darkMode ? 'opacity-0 rotate-90 scale-0' : 'opacity-100 rotate-0 scale-100'
+          className={`absolute inset-0 w-6 h-6 text-yellow-400 transition-opacity duration-300 ${
+            darkMode ? 'opacity-0' : 'opacity-100'
           }`}
         />
         <MoonIcon 
-          className={`absolute inset-0 w-6 h-6 text-blue-300 transition-all duration-300 ${
-            darkMode ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-0'
+          className={`absolute inset-0 w-6 h-6 text-blue-300 transition-opacity duration-300 ${
+            darkMode ? 'opacity-100' : 'opacity-0'
           }`}
         />
       </div>

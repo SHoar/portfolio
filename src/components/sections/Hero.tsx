@@ -4,10 +4,10 @@ import profileImage from '../../assets/images/IMG_3382.jpg';
 const Hero: React.FC = () => {
   return (
     <section className="gradient-bg-primary dark:gradient-bg-secondary text-white pt-32 pb-20 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-accent-cyan/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent-purple/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+      {/* Decorative background elements - Static for performance */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-accent-cyan/30 rounded-full blur-2xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent-purple/30 rounded-full blur-2xl"></div>
       </div>
       
       <div className="container relative z-10" id="maincontent" tabIndex={-1}>

@@ -10,8 +10,8 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: 'Portfolio', href: '#portfolio', current: false },
   { name: 'About', href: '#about', current: false },
+  { name: 'Portfolio', href: '#portfolio', current: false },
   { name: 'Contact', href: '#contact', current: false },
 ];
 
@@ -44,9 +44,10 @@ export default function Header() {
       className={classNames(
         'fixed w-full z-10 transition-all duration-300',
         scrolled
-          ? 'bg-secondary-900/95 dark:bg-secondary-950/95 backdrop-blur-xl shadow-xl py-2'
-          : 'bg-secondary-900/90 dark:bg-secondary-950/90 backdrop-blur-md py-4'
+          ? 'bg-secondary-900/98 dark:bg-secondary-950/98 shadow-xl py-2'
+          : 'bg-secondary-900/95 dark:bg-secondary-950/95 py-4'
       )}
+      style={{ willChange: 'padding' }}
     >
       {({ open }) => (
         <>

@@ -40,7 +40,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
               <img 
                 src={logoUrl} 
                 alt={`${agency} logo`} 
-                className="w-auto h-48 object-contain transform group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
+                className="w-auto h-48 object-contain transition-opacity duration-300 group-hover:opacity-90 drop-shadow-lg"
                 crossOrigin="anonymous"
                 onError={() => {
                   console.log(`Failed to load logo for ${agency}`);
@@ -68,9 +68,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-primary-600/80 via-transparent to-transparent 
                           opacity-0 group-hover:opacity-100 transition-opacity duration-300 
-                          flex items-end justify-center pb-6">
-              <div className="text-white text-center px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <div className="text-sm font-semibold px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full inline-block">
+                          flex items-end justify-center pb-6 pointer-events-none">
+              <div className="text-white text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="text-sm font-semibold px-4 py-2 bg-white/30 rounded-full inline-block">
                   View Details →
                 </div>
               </div>
