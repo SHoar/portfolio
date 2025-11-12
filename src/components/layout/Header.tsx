@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import DarkModeToggle from '../ui/DarkModeToggle';
 
 interface NavigationItem {
   name: string;
@@ -9,8 +10,8 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: 'Portfolio', href: '#portfolio', current: false },
   { name: 'About', href: '#about', current: false },
+  { name: 'Portfolio', href: '#portfolio', current: false },
   { name: 'Contact', href: '#contact', current: false },
 ];
 
@@ -43,9 +44,10 @@ export default function Header() {
       className={classNames(
         'fixed w-full z-10 transition-all duration-300',
         scrolled
-          ? 'bg-secondary shadow-md py-2'
-          : 'bg-secondary py-4'
+          ? 'bg-secondary-900/98 dark:bg-secondary-950/98 shadow-xl py-2'
+          : 'bg-secondary-900/95 dark:bg-secondary-950/95 py-4'
       )}
+      style={{ willChange: 'padding' }}
     >
       {({ open }) => (
         <>
@@ -67,27 +69,28 @@ export default function Header() {
                 <div className="flex flex-shrink-0 items-center">
                   <a 
                     href="#page-top" 
-                    className="text-xl font-bold text-white"
-                    style={{ fontFamily: "'Montserrat', sans-serif" }}
+                    className="text-xl font-bold hover:opacity-80 transition-opacity duration-300"
                   >
-                    Sean Hoar
+                    <span className="text-gradient">Sean Hoar</span>
                   </a>
                 </div>
               </div>
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
+              <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-2">
+                <div className="flex space-x-1">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-white hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-300"
-                      style={{ fontFamily: "'Montserrat', sans-serif" }}
+                      className="text-white hover:text-primary-400 px-4 py-2 text-sm font-semibold 
+                                 transition-all duration-300 rounded-lg
+                                 hover:bg-white/10 backdrop-blur-sm"
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
+                <DarkModeToggle />
               </div>
             </div>
           </div>
@@ -99,12 +102,15 @@ export default function Header() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                  className="text-white hover:bg-white/10 hover:text-primary-400 block rounded-lg px-3 py-2 text-base font-semibold transition-all duration-300"
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <div className="px-3 py-2">
+                <DarkModeToggle />
+              </div>
             </div>
           </Disclosure.Panel>
         </>
