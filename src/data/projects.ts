@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: "PANGEA-FUSE Full-Stack Microservice",
-    company: "Booz Allen Hamilton",
+    company: "Technology Consulting Firm",
     agency: "US Army",
     dateRange: "June 2025 - Present",
     description: "Army Futures Command AI2C - Full-stack microservice architecture with React frontend and Python FastAPI backend",
@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Benefits.gov Modernization",
-    company: "Booz Allen Hamilton",
+    company: "Technology Consulting Firm",
     agency: "DOL",
     dateRange: "Sept 2022 - March 2024",
     description: "Department of Labor - Legacy React/Drupal migration to Next.js framework",
@@ -39,7 +39,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Soldier Recruiting Analytics Platform",
-    company: "Booz Allen Hamilton",
+    company: "Technology Consulting Firm",
     agency: "US Army",
     dateRange: "Sept 2024 - June 2025",
     description: "Army Futures Command AI2C - React-based recruiting analytics dashboard",
@@ -51,7 +51,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: "Recreation.gov Platform Development",
-    company: "Booz Allen Hamilton",
+    company: "Technology Consulting Firm",
     agency: "USDA",
     dateRange: "July 2021 - July 2022",
     description: "Public-facing AWS microservice architecture for federal recreation booking",
@@ -63,7 +63,7 @@ const projects: Project[] = [
   {
     id: 5,
     title: "F-35 DevSecOps Pipeline Automation",
-    company: "Booz Allen Hamilton",
+    company: "Government Contractor",
     agency: "USAF",
     dateRange: "Sept 2020 - July 2021",
     description: "Joint Program Office / Air Force - CI/CD automation and security integration",

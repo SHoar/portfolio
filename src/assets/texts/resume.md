@@ -1,5 +1,5 @@
 EXPERIENCE SUMMARY
-As a resourceful lead engineer and web development professional with over 8 years of software development experience, 10 years of Gov. consulting, and 21 years of professional experience, I specialize in React.js frontend single-page applications and full-stack software development. I excel in mentoring Agile software development teams and creating innovative solutions for Booz Allen Hamilton clients and customers.
+As a resourceful lead engineer and web development professional with over 8 years of software development experience, 10 years of Gov. consulting, and 21 years of professional experience, I specialize in React.js frontend single-page applications and full-stack software development. I excel in mentoring Agile software development teams and creating innovative solutions for enterprise clients and customers.
 
 COMPETENCIES 
 •	Software Development / Engineering (8+ yrs.)
@@ -16,13 +16,6 @@ COMPETENCIES
 •	REST APIs (8 yrs.)
  
 
-BAH INTERNAL BADGES
- 
-•	JavaScript Practitioner
-•	React.js Practitioner
-•	AI Aware - Enablement
- 
-
 SUMMARY OF SKILLS, TOOLS, AND TECHNOLOGIES
 Programming Languages
 JavaScript (8 yrs.), HTML/CSS (8yrs), Typescript 65yr), Python (4 yrs.), SQL (4 yrs.), Java (2 yrs.)
@@ -37,7 +30,7 @@ Linux (8 yrs.), Mac (10 yrs.)
 EXPERIENCE DETAILS
 
 Lead Engineer, Associate
-Booz Allen Hamilton								       July 2021 - Present Washington, DC(Remote)
+Technology Consulting Firm								       July 2021 - Present Washington, DC(Remote)
 
 EDITS Army Futures Command / AI2C – PANGEA-FUSE – Full Stack Software Engineer, 6/2025 – Present
 •	Architected and developed a full-stack microservice, leveraging React for the frontend and Python FastAPI for the backend, deployed on a Kubernetes/Helm/AWS EKS/ECR system. This demonstrates ownership and technical expertise across the entire stack.
@@ -57,7 +50,7 @@ GSA Hale-BOPP COMET – CLS Acquisitions Functional Modernization Java Developer
 •	 Restructured DB Migrations and mapping translations for GSA Client customer legacy DBMS (Database Management Systems) Mainframe to MySQL, in coordination with Hibernate ORM and Flyway DB migration tool.
 •	Implemented early-stage full stack monolithic repository for Spring Boot/ Java 21 / Angular / Docker containerized application while waiting on Cloud CI/CD integration.
 
-BAH ETSS Microsoft Copilot Prompt Engineer, 1/2024-4/2024
+Microsoft Copilot Prompt Engineer, 1/2024-4/2024
 •	Produced and published daily tips and trips for the Copilot user community.
 •	Managed an ecosystem for sharing useful Copilot prompts.
 •	Trialed and documented new features and best practices in the M365 Copilot ecosystem.
@@ -82,7 +75,7 @@ Recreation.gov - Senior Frontend Engineer, 7/2021 – 7/2022
 
 
 Staff Engineer/Senior Consultant						8/2020 – 7/2021
-Booz Allen Hamilton					                                         
+Technology Consulting Firm					                                         
 Herndon, VA
 
 JPO/AF F-35 DevSecOps - Software Engineer, 9/2020 – 7/2021
