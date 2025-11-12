@@ -17,19 +17,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-6 text-gradient">Connect With Me</h3>
             <div className="flex justify-center md:justify-start flex-wrap gap-3">
               <a 
-                href="https://twitter.com/seanhoar" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10
-                         flex items-center justify-center 
-                         hover:bg-primary-600 hover:border-primary-500 hover:scale-110
-                         transition-all duration-300 group"
-                aria-label="Twitter"
-              >
-                <i className="fa fa-twitter text-lg group-hover:scale-110 transition-transform"></i>
-              </a>
-              <a 
-                href="https://linkedin.com/IN/seanhoar" 
+                href="https://linkedin.com/in/seanhoar" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10
@@ -38,7 +26,7 @@ const Footer = () => {
                          transition-all duration-300 group"
                 aria-label="LinkedIn"
               >
-                <i className="fa fa-linkedin text-lg group-hover:scale-110 transition-transform"></i>
+                <i className="fa-brands fa-linkedin text-lg group-hover:scale-110 transition-transform"></i>
               </a>
               <a 
                 href="https://github.com/SHoar" 
@@ -50,7 +38,7 @@ const Footer = () => {
                          transition-all duration-300 group"
                 aria-label="GitHub"
               >
-                <i className="fa fa-github text-lg group-hover:scale-110 transition-transform"></i>
+                <i className="fa-brands fa-github text-lg group-hover:scale-110 transition-transform"></i>
               </a>
               <a 
                 href="https://codepen.io/seanhoar" 
@@ -62,9 +50,9 @@ const Footer = () => {
                          transition-all duration-300 group"
                 aria-label="CodePen"
               >
-                <i className="fa fa-codepen text-lg group-hover:scale-110 transition-transform"></i>
+                <i className="fa-brands fa-codepen text-lg group-hover:scale-110 transition-transform"></i>
               </a>
-              <a 
+              {/* <a 
                 href="https://www.codeschool.com/users/SHoar" 
                 target="_blank"
                 rel="noopener noreferrer"
@@ -74,8 +62,8 @@ const Footer = () => {
                          transition-all duration-300 group"
                 aria-label="CodeSchool"
               >
-                <i className="fa fa-code text-lg group-hover:scale-110 transition-transform"></i>
-              </a>
+                <i className="fa-solid fa-code text-lg group-hover:scale-110 transition-transform"></i>
+              </a> */}
               <a 
                 href="https://freecodecamp.com/SHoar" 
                 target="_blank"
@@ -86,7 +74,7 @@ const Footer = () => {
                          transition-all duration-300 group"
                 aria-label="FreeCodeCamp"
               >
-                <i className="fa fa-free-code-camp text-lg group-hover:scale-110 transition-transform"></i>
+                <i className="fa-brands fa-free-code-camp text-lg group-hover:scale-110 transition-transform"></i>
               </a>
             </div>
           </div>

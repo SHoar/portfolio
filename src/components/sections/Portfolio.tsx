@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
                            transition-all duration-300"
                 aria-label="GitHub"
               >
-                <i className="fa fa-github text-5xl text-secondary-700 dark:text-secondary-300 
+                <i className="fa-brands fa-github text-5xl text-secondary-700 dark:text-secondary-300 
                              group-hover:text-primary-600 dark:group-hover:text-primary-400 
                              transition-colors duration-300"></i>
                 <span className="text-sm font-semibold text-secondary-600 dark:text-secondary-400">
@@ -67,7 +67,7 @@ const Portfolio: React.FC = () => {
                            transition-all duration-300"
                 aria-label="CodePen"
               >
-                <i className="fa fa-codepen text-5xl text-secondary-700 dark:text-secondary-300 
+                <i className="fa-brands fa-codepen text-5xl text-secondary-700 dark:text-secondary-300 
                              group-hover:text-primary-600 dark:group-hover:text-primary-400 
                              transition-colors duration-300"></i>
                 <span className="text-sm font-semibold text-secondary-600 dark:text-secondary-400">
