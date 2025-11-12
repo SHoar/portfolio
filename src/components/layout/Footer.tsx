@@ -18,11 +18,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <h5 className="font-bold">Outside Washington, D.C.</h5>
-                <p>Fairfax Station, VA</p>
-              </li>
-              <li>
-                <h5 className="font-bold">South Florida</h5>
-                <p>Boynton Beach, FL</p>
+                <p>Roanoke, VA</p>
               </li>
             </ul>
           </div>
