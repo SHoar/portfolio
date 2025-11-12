@@ -1,5 +1,5 @@
 EXPERIENCE SUMMARY
-As a resourceful lead engineer and web development professional with over 8 years of software development experience, 10 years of Gov. consulting, and 21 years of professional experience, I specialize in React.js frontend single-page applications and full-stack software development. I excel in mentoring Agile software development teams and creating innovative solutions for Booz Allen Hamilton clients and customers.
+As a resourceful lead engineer and web development professional with over 8 years of software development experience and 21 years of professional experience, I specialize in React.js frontend single-page applications and full-stack software development. I excel in mentoring Agile software development teams and creating innovative solutions for enterprise clients.
 
 COMPETENCIES 
 •	Software Development / Engineering (8+ yrs.)
@@ -18,9 +18,7 @@ COMPETENCIES
 
 BAH INTERNAL BADGES
  
-•	JavaScript Practitioner
-•	React.js Practitioner
-•	AI Aware - Enablement
+(Removed for privacy)
  
 
 SUMMARY OF SKILLS, TOOLS, AND TECHNOLOGIES
@@ -37,32 +35,32 @@ Linux (8 yrs.), Mac (10 yrs.)
 EXPERIENCE DETAILS
 
 Lead Engineer, Associate
-Booz Allen Hamilton								       July 2021 - Present Washington, DC(Remote)
+Federal Consulting Firm								       July 2021 - Present Washington, DC(Remote)
 
-EDITS Army Futures Command / AI2C – PANGEA-FUSE – Full Stack Software Engineer, 6/2025 – Present
+Full Stack Software Engineer, 6/2025 – Present
 •	Architected and developed a full-stack microservice, leveraging React for the frontend and Python FastAPI for the backend, deployed on a Kubernetes/Helm/AWS EKS/ECR system. This demonstrates ownership and technical expertise across the entire stack.
 •	Engineered a high-performance FastAPI OpenAPI REST microservice to facilitate complex queries across diverse data sources including Trino, SeaweedFS, AWS S3, and Postgres-PostGIS, enhancing system functionality and scalability.
 •	Led the full-stack development of a React microfrontend and a Python FastAPI backend microservice, managing its lifecycle within a Kubernetes/Helm/AWS EKS/ECR deployment. This highlights leadership in a technically complex environment.
 •	Developed and maintained a FastAPI-based OpenAPI REST microservice that successfully integrated and queried data from various storage systems like SeaweedFS, AWS S3, and Postgres-PostGIS in a dynamic VPC cloud environment. 
 
-EDITS Army Futures Command / AI2C – Soldier Recruiting - React Developer, 9/2024 - 6/2025
+Recruiting Analytics - React Developer, 9/2024 - 6/2025
 •	Led the frontend architecture transformation by implementing Reducer Context state management, improving state scalability and maintainability over the previous local state and basic React-Context approach.
 •	Refactored and enhanced routing with nested React Router, enabling seamless multi-endpoint analytics switching for a more dynamic and user-friendly dashboard experience.
 •	Mentored and guided a junior developer team, introducing best practices in React, TypeScript, Material UI, and state management, reducing technical debt and improving overall development efficiency.
 •	Migrated a Power BI dashboard module to a modern React-based data visualization platform, leveraging MUI X-Charts for improved interactivity, customization, and performance
 •	Redesigned and enhanced styling consistency, accessibility, and responsiveness for an improved user experience.
 
-GSA Hale-BOPP COMET – CLS Acquisitions Functional Modernization Java Developer, 4/2024 – 9/2024
+GSA CLS Acquisitions Functional Modernization - Java Developer, 4/2024 – 9/2024
 •	Built and migrated SAP Appen PowerBuilder backend to Spring Boot REST API and SAML SSO Integration for SimpleSamlPHP Configuration with Docker.
 •	 Restructured DB Migrations and mapping translations for GSA Client customer legacy DBMS (Database Management Systems) Mainframe to MySQL, in coordination with Hibernate ORM and Flyway DB migration tool.
 •	Implemented early-stage full stack monolithic repository for Spring Boot/ Java 21 / Angular / Docker containerized application while waiting on Cloud CI/CD integration.
 
-BAH ETSS Microsoft Copilot Prompt Engineer, 1/2024-4/2024
+Microsoft Copilot Prompt Engineer, 1/2024-4/2024
 •	Produced and published daily tips and trips for the Copilot user community.
 •	Managed an ecosystem for sharing useful Copilot prompts.
 •	Trialed and documented new features and best practices in the M365 Copilot ecosystem.
 
-DOL Benefits.gov - Senior Software Engineer, 9/2022 – 3/2024
+Benefits.gov - Senior Software Engineer, 9/2022 – 3/2024
 •	Delivered a wholesale legacy React.js / Drupal migration of the Benefits.gov flagship website to Next.js framework frontend, reducing avg. page load times from 6s down to 1.5s and lower.
 •	Cut costs by implementing Server-Side Rendering for SEO optimization and plans to retire 3rd party SEO rendering tool Rendertron.
 •	Reverse-engineered legacy code and state management tools like Redux.js/RxJS/Redux-observable to use React 18 Context with JS async/await fetching for dependency thinning.
@@ -71,9 +69,9 @@ DOL Benefits.gov - Senior Software Engineer, 9/2022 – 3/2024
 •	Documented migration efforts in Jira/Confluence for future onboarding efforts/transitions.
 
 Recreation.gov - Senior Frontend Engineer, 7/2021 – 7/2022
-•	Agile software development in a public government AWS micro-service architecture
+•	Agile software development in a public AWS micro-service architecture
 •	Developed operational bug fixes for existing internal and external frontend website in React/ Redux/ JavaScript / HTML/ SCSS/CSS 
-•	Codified government business requirements to new mobile-responsive features for public internal and external websites
+•	Codified business requirements to new mobile-responsive features for public internal and external websites
 •	Contributed to a multi-team monolith repo with multiple micro-frontend bundles in a GitHub Enterprise/ Jenkins / AWS CI/CD environment
 •	Rapidly turned over and delivered accessibility patch fixes for a major 508/accessibility audit.
 
@@ -82,10 +80,10 @@ Recreation.gov - Senior Frontend Engineer, 7/2021 – 7/2022
 
 
 Staff Engineer/Senior Consultant						8/2020 – 7/2021
-Booz Allen Hamilton					                                         
+Federal Consulting Firm					                                         
 Herndon, VA
 
-JPO/AF F-35 DevSecOps - Software Engineer, 9/2020 – 7/2021
+DevSecOps - Software Engineer, 9/2020 – 7/2021
 	Developed shared libraries, automating CI/CD via Jenkins Pipelines with Jenkins Templating Engine plugin (JTE)
 	Contributed to Agile planning/ sprint planning facilitation for agile team process improvement
 	Incorporated server tools for DevSecOps security scanning into Continuous Integration / Continuous – Authority To Operate (c-ATO) Application Pipelines
@@ -101,7 +99,7 @@ Manassas, VA
 Insight Global, Software Engineer						             2/2019-10/2019
 Arlington, VA
 
-DOD/Navy/ACINT Program, 10/2019 – 8/2020
+GIS Tracking System, 10/2019 – 8/2020
 	Developed front end UI dashboard with React.js/Redux.js JavaScript framework
 	Programmed GIS / Geographic Information System features for customer-requested mapping and tracking features
 	Utilized RESTful/XML/SOAP Java JSON APIs for data loading and processing for web retrieval
@@ -116,7 +114,7 @@ Major Accomplishments
 
 Computer Futures, JavaScript Developer & Contractor	3/2018 – 2/2019
 
-USPTO IDEA2 Program, 3/2018 – 2/2019 
+Enterprise Development Program, 3/2018 – 2/2019 
 Sub-contracted via Data Storage Science, LLC 
 	Developed monthly chargeback operations and billing, delivered via programmatically implemented Excel Spreadsheets as well as a jQuery-based website with up-to-date reporting features.
 	Worked with external Trello JavaScript APIs and internal linux CRON jobs, & Perl/Node.js scripts for addons to Scrum operational planning boards.
@@ -125,17 +123,17 @@ Sub-contracted via Data Storage Science, LLC
 	Created ERD mapping for OLAP-like MySQL database environment
 
 Major Accomplishments
-Saved USPTO IT $10M because of IT storage lifecycle management, data-analysis, and workflow management.
+Achieved significant IT cost savings through storage lifecycle management, data-analysis, and workflow management.
 
 
-Artech Government Services, Business Process Analyst	12/2015 – 3/2018
+Business Process Analyst	12/2015 – 3/2018
 Sub-contracted via Lockheed Martin Desktop Solutions, Inc./ Leidos Digital Solutions, Inc.
-•	Served as Subject-Matter-Expert, Business Workflow Analyst, and Consultant for Lockheed Martin and Leidos, digitizing workflows and managing customer delivery and implementation over the SDLC.
-•	Acted as CRM & IT Consultant for the U.S. House of Representatives, eliciting customer requirements, training users, and customizing HTML newsletters for mass constituent outreach.
-•	Worked as a Business Process Analyst for the Chickasaw Nation, developing JavaScript/jQuery plugins, creating user guides, and producing service workflows for efficient operational processes.
+•	Served as Subject-Matter-Expert, Business Workflow Analyst, and Consultant for enterprise clients, digitizing workflows and managing customer delivery and implementation over the SDLC.
+•	Acted as CRM & IT Consultant, eliciting customer requirements, training users, and customizing HTML newsletters for mass constituent outreach.
+•	Worked as a Business Process Analyst, developing JavaScript/jQuery plugins, creating user guides, and producing service workflows for efficient operational processes.
 
 Major Accomplishments
-By standardizing their paper workflows into the CRM, the Chickasaw Nation has more consistent oversight of the processes and progress of their constituent services
+By standardizing paper workflows into the CRM, clients achieved more consistent oversight of the processes and progress of their constituent services
 
 Public Broadcasting Service (PBS), Technical Support Analyst.                                              6/2012 – 12/2015
 
