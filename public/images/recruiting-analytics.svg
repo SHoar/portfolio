@@ -1,0 +1,32 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="analyticsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#analyticsGradient)" opacity="0.1"/>
+  
+  <!-- Bar chart -->
+  <rect x="50" y="120" width="20" height="40" rx="2" fill="#10b981" opacity="0.8"/>
+  <rect x="80" y="90" width="20" height="70" rx="2" fill="#059669" opacity="0.9"/>
+  <rect x="110" y="105" width="20" height="55" rx="2" fill="#10b981" opacity="0.8"/>
+  <rect x="140" y="75" width="20" height="85" rx="2" fill="#059669" opacity="0.9"/>
+  
+  <!-- Trend line -->
+  <polyline points="60,130 90,100 120,115 150,85" 
+            fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Data points -->
+  <circle cx="60" cy="130" r="5" fill="#10b981"/>
+  <circle cx="90" cy="100" r="5" fill="#059669"/>
+  <circle cx="120" cy="115" r="5" fill="#10b981"/>
+  <circle cx="150" cy="85" r="5" fill="#059669"/>
+  
+  <!-- User/recruiter icon -->
+  <circle cx="100" cy="45" r="12" fill="url(#analyticsGradient)"/>
+  <path d="M 100 58 Q 85 65 85 75 L 115 75 Q 115 65 100 58 Z" fill="url(#analyticsGradient)"/>
+</svg>
+

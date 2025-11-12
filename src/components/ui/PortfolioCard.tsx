@@ -34,8 +34,8 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         rel="noopener noreferrer"
         className="block h-full group"
       >
-        <div className="glass-card overflow-hidden h-full flex flex-col">
-          <div className="relative overflow-hidden bg-gradient-to-br from-secondary-50 to-secondary-100 dark:from-secondary-800 dark:to-secondary-900 p-8 flex items-center justify-center aspect-video">
+        <div className="glass-card overflow-hidden h-full flex flex-col" id="portfolio-card-glass">
+          <div id="portfolio-card-image" className="relative overflow-hidden bg-gradient-to-br from-secondary-50 to-secondary-100 dark:from-secondary-800 dark:to-secondary-900 p-8 flex items-center justify-center aspect-video">
             {!showFallback ? (
               <img 
                 src={logoUrl} 

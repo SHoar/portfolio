@@ -1,3 +1,5 @@
+import { images } from '../assets';
+
 export interface Project {
   id: number;
   title: string;
@@ -21,7 +23,7 @@ const projects: Project[] = [
     description: "Full-stack microservice development with React frontend and Python FastAPI backend",
     technologies: ["React", "Python", "FastAPI", "Kubernetes", "Docker", "PostgreSQL", "AWS"],
     impact: "Developing cloud-native microservices in a containerized environment, implementing RESTful APIs and database integrations to support AI/ML workflows and data analytics capabilities.",
-    logoUrl: "", // Using fallback badge
+    logoUrl: images.projectLogos.aiMlMicroservice,
     link: ""
   },
   {
@@ -33,7 +35,7 @@ const projects: Project[] = [
     description: "Legacy React/Drupal migration to modern Next.js framework",
     technologies: ["Next.js", "React 18", "JavaScript", "Node.js", "SEO", "Server-Side Rendering", "Redux"],
     impact: "Delivered a wholesale migration reducing average page load times from 6s to 1.5s while cutting costs by implementing SSR for SEO optimization, eliminating the need for 3rd party rendering tools.",
-    logoUrl: "", // Using fallback badge
+    logoUrl: images.projectLogos.publicBenefits,
     link: ""
   },
   {
@@ -45,7 +47,7 @@ const projects: Project[] = [
     description: "React-based recruiting analytics dashboard",
     technologies: ["React", "TypeScript", "Material UI", "MUI X-Charts", "React Router", "Context API"],
     impact: "Led frontend architecture transformation with Reducer Context state management and migrated legacy dashboard to modern React platform, improving interactivity and performance while mentoring junior developers.",
-    logoUrl: "", // Using fallback badge
+    logoUrl: images.projectLogos.recruitingAnalytics,
     link: ""
   },
   {
@@ -57,7 +59,7 @@ const projects: Project[] = [
     description: "Public-facing AWS microservice architecture for large-scale booking platform",
     technologies: ["React", "Redux", "JavaScript", "AWS", "Jenkins", "SCSS", "GitHub Enterprise"],
     impact: "Delivered operational bug fixes and mobile-responsive features in a multi-team monolith repo with micro-frontend bundles, rapidly turning around accessibility patches for major compliance audit.",
-    logoUrl: "", // Using fallback badge
+    logoUrl: images.projectLogos.recreationPlatform,
     link: ""
   },
   {
@@ -69,7 +71,7 @@ const projects: Project[] = [
     description: "CI/CD automation and security integration",
     technologies: ["Jenkins", "JTE", "Groovy", "REST APIs", "Docker", "AWS", "DevSecOps"],
     impact: "Automated CI/CD pipelines with Jenkins Templating Engine, integrated security scanning for compliance requirements, and coordinated software licensing across 10+ applications in multi-tier cloud environments.",
-    logoUrl: "", // Using fallback badge
+    logoUrl: images.projectLogos.devsecops,
     link: ""
   },
   {
@@ -81,7 +83,7 @@ const projects: Project[] = [
     description: "React dashboard with GIS mapping and real-time tracking",
     technologies: ["React", "Redux", "Node.js", "Express", "GIS", "RESTful APIs", "Jenkins", "Bitbucket"],
     impact: "Deployed major legacy JavaScript frontend refactor to modern React, establishing client-side framework for modern development and improving maintainability.",
-    logoUrl: "", // Using fallback badge
+    logoUrl: images.projectLogos.gisTracking,
     link: ""
   }
 ];

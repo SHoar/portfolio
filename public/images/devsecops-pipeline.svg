@@ -1,0 +1,34 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="pipelineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#pipelineGradient)" opacity="0.1"/>
+  
+  <!-- Pipeline stages -->
+  <rect x="30" y="80" width="35" height="40" rx="5" fill="#ef4444" opacity="0.7"/>
+  <rect x="82" y="80" width="35" height="40" rx="5" fill="#dc2626" opacity="0.8"/>
+  <rect x="134" y="80" width="35" height="40" rx="5" fill="#ef4444" opacity="0.7"/>
+  
+  <!-- Pipeline arrows -->
+  <path d="M 65 100 L 75 100 L 72 97 M 75 100 L 72 103" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 117 100 L 127 100 L 124 97 M 127 100 L 124 103" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Security shield -->
+  <path d="M 100 35 L 85 42 L 85 60 Q 85 75 100 85 Q 115 75 115 60 L 115 42 Z" 
+        fill="none" stroke="#ef4444" stroke-width="3"/>
+  <path d="M 95 55 L 98 60 L 105 50" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Gear/automation icon -->
+  <circle cx="100" cy="145" r="20" fill="none" stroke="#ef4444" stroke-width="3"/>
+  <circle cx="100" cy="145" r="12" fill="#dc2626" opacity="0.6"/>
+  <line x1="100" y1="125" x2="100" y2="132" stroke="#ef4444" stroke-width="3"/>
+  <line x1="100" y1="158" x2="100" y2="165" stroke="#ef4444" stroke-width="3"/>
+  <line x1="120" y1="145" x2="113" y2="145" stroke="#ef4444" stroke-width="3"/>
+  <line x1="87" y1="145" x2="80" y2="145" stroke="#ef4444" stroke-width="3"/>
+</svg>
+

@@ -1,11 +1,7 @@
-// Define base path for GitHub Pages
-const BASE_PATH = '/portfolio/';
-
 // Function to get correct path with base
+// Using Vite's BASE_URL which is set in vite.config.ts
 const getImagePath = (path: string): string => {
-  // Use BASE_PATH if it's in production (GitHub pages deployment)
-  const isProduction = window.location.hostname !== 'localhost';
-  const basePath = isProduction ? BASE_PATH : '/';
+  const basePath = import.meta.env.BASE_URL;
   return `${basePath}images/${path}`;
 };
 
@@ -18,5 +14,13 @@ export const images = {
     funFoodFriends: getImagePath('portfolio/FunFoodFriends.jpg'),
     shoutbox: getImagePath('portfolio/shoutbox_hires2382x1534.jpg'),
     githubProfiles: getImagePath('portfolio/MyGHProfileSnapshot.jpg')
+  },
+  projectLogos: {
+    aiMlMicroservice: getImagePath('ai-ml-microservice.svg'),
+    publicBenefits: getImagePath('public-benefits.svg'),
+    recruitingAnalytics: getImagePath('recruiting-analytics.svg'),
+    recreationPlatform: getImagePath('recreation-platform.svg'),
+    devsecops: getImagePath('devsecops-pipeline.svg'),
+    gisTracking: getImagePath('gis-tracking.svg')
   }
 }; 
