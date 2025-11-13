@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../assets/images/IMG_3382.jpg';
+import {getImagePath, images} from '../../assets/index';
 
 const Hero: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
           <img 
             id="profile-pic" 
             className="profile-image w-56 h-56 md:w-64 md:h-64 object-cover mb-8 animate-scale-in"
-            src={profileImage}
+            src={getImagePath(images.profile)}
             alt="Sean Hoar profile" 
           />
           <div className="intro-text space-y-4">
