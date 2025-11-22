@@ -29,7 +29,7 @@ const Talks: React.FC = () => {
             {/* Responsive iframe container */}
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://shoar.github.io/RVNUG_TechTalk_09025/index.html"
+                src="https://shoar.github.io/Tech_Talks/index.html"
                 className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg border-2 border-secondary-200 dark:border-secondary-700"
                 title="Evolutions of Vibe Coding - RVNUG Tech Talk"
                 allow="fullscreen"
@@ -39,7 +39,7 @@ const Talks: React.FC = () => {
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
-                href="https://shoar.github.io/RVNUG_TechTalk_09025/index.html"
+                href="https://shoar.github.io/Tech_Talks/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary inline-flex items-center space-x-2"
