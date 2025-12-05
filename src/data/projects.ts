@@ -44,9 +44,9 @@ const projects: Project[] = [
     company: "Technology Consulting Firm",
     agency: "Enterprise Client",
     dateRange: "Sept 2024 - June 2025",
-    description: "React-based recruiting analytics dashboard",
+    description: "React-based recruiting analytics dashboard with complex data visualization",
     technologies: ["React", "TypeScript", "Material UI", "MUI X-Charts", "React Router", "Context API"],
-    impact: "Led frontend architecture transformation with Reducer Context state management and migrated legacy dashboard to modern React platform, improving interactivity and performance while mentoring junior developers.",
+    impact: "Architected advanced state management patterns using Reducer Context to handle complex analytics workflows, enabling real-time filtering and aggregation of recruitment metrics across multiple data dimensions while optimizing render performance.",
     logoUrl: images.projectLogos.recruitingAnalytics,
     link: ""
   },
@@ -58,7 +58,7 @@ const projects: Project[] = [
     dateRange: "July 2021 - July 2022",
     description: "Public-facing AWS microservice architecture for large-scale booking platform",
     technologies: ["React", "Redux", "JavaScript", "AWS", "Jenkins", "SCSS", "GitHub Enterprise"],
-    impact: "Delivered operational bug fixes and mobile-responsive features in a multi-team monolith repo with micro-frontend bundles, rapidly turning around accessibility patches for major compliance audit.",
+    impact: "Solved critical technical challenges in complex multi-team monolith with micro-frontend architecture, implementing responsive component strategies and accessibility patterns that resolved compliance audits while maintaining system stability across distributed bundles.",
     logoUrl: images.projectLogos.recreationPlatform,
     link: ""
   },

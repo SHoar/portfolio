@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
               Full-stack Engineer & AI-Powered Developer
             </p>
             <p className="text-lg md:text-xl text-white/75 max-w-xl mx-auto mt-4">
-              Building maintainable systems with Python, React, Docker & Kubernetes
+              Technical depth in cloud-native systems, microservices, and scalable architectures
             </p>
           </div>
           
