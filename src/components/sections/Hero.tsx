@@ -24,10 +24,10 @@ const Hero: React.FC = () => {
             </h1>
             <div className="section-divider"></div>
             <p className="text-xl md:text-3xl font-light text-white/90 max-w-2xl mx-auto">
-              Full-stack Engineer & AI-Powered Developer
+              Senior IC Engineer • Technical Depth Over Team Leadership
             </p>
             <p className="text-lg md:text-xl text-white/75 max-w-xl mx-auto mt-4">
-              Building maintainable systems with Python, React, Docker & Kubernetes
+              Solving complex technical problems hands-on with Python, React, Docker & Kubernetes
             </p>
           </div>
           
