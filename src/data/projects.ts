@@ -44,9 +44,9 @@ const projects: Project[] = [
     company: "Technology Consulting Firm",
     agency: "Enterprise Client",
     dateRange: "Sept 2024 - June 2025",
-    description: "React-based recruiting analytics dashboard",
+    description: "React-based recruiting analytics dashboard with complex data visualization",
     technologies: ["React", "TypeScript", "Material UI", "MUI X-Charts", "React Router", "Context API"],
-    impact: "Architected and implemented frontend transformation using Reducer Context state management pattern, independently migrated legacy dashboard to modern React platform with TypeScript strict mode, improving interactivity by 40% and eliminating render bottlenecks through performance profiling.",
+    impact: "Architected advanced state management patterns using Reducer Context to handle complex analytics workflows, enabling real-time filtering and aggregation of recruitment metrics across multiple data dimensions while optimizing render performance.",
     logoUrl: images.projectLogos.recruitingAnalytics,
     link: ""
   },

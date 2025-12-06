@@ -10,7 +10,7 @@ const Portfolio: React.FC = () => {
           <h2 className="section-heading">Professional Experience</h2>
           <div className="section-divider"></div>
           <p className="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto mt-4">
-            Featured projects from enterprise clients and leading organizations, showcasing full-stack development and technical leadership
+            Complex technical challenges solved across distributed systems, cloud infrastructure, and scalable architectures
           </p>
         </div>
         

@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
               Senior IC Engineer • Technical Depth Over Team Leadership
             </p>
             <p className="text-lg md:text-xl text-white/75 max-w-xl mx-auto mt-4">
-              Solving complex technical problems hands-on with Python, React, Docker & Kubernetes
+              Technical depth in cloud-native systems, microservices, and scalable architectures
             </p>
           </div>
           
