@@ -31,6 +31,61 @@ const About: React.FC = () => {
                 </p>
               ))}
             </div>
+            
+            {/* Technical Strengths - IC Focus */}
+            <div className="mt-12 pt-8 border-t border-secondary-200 dark:border-secondary-700">
+              <h3 className="text-2xl font-bold text-secondary-900 dark:text-white mb-6">
+                Why I Excel as an Individual Contributor
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
+                    <div>
+                      <strong className="text-secondary-900 dark:text-white">Deep Technical Execution:</strong>
+                      <span className="text-secondary-700 dark:text-secondary-300"> Most productive when 70%+ time is spent building and solving complex problems</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
+                    <div>
+                      <strong className="text-secondary-900 dark:text-white">Autonomous Problem Solver:</strong>
+                      <span className="text-secondary-700 dark:text-secondary-300"> Proven track record of independently architecting and delivering production systems</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
+                    <div>
+                      <strong className="text-secondary-900 dark:text-white">Performance Optimization:</strong>
+                      <span className="text-secondary-700 dark:text-secondary-300"> Expertise in profiling, debugging, and eliminating bottlenecks at scale</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
+                    <div>
+                      <strong className="text-secondary-900 dark:text-white">Full-Stack Depth:</strong>
+                      <span className="text-secondary-700 dark:text-secondary-300"> React/TypeScript frontends + Python/FastAPI backends + Kubernetes deployments</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
+                    <div>
+                      <strong className="text-secondary-900 dark:text-white">Migration Specialist:</strong>
+                      <span className="text-secondary-700 dark:text-secondary-300"> Successfully modernized legacy systems with measurable performance gains</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
+                    <div>
+                      <strong className="text-secondary-900 dark:text-white">Production-Ready Code:</strong>
+                      <span className="text-secondary-700 dark:text-secondary-300"> Focus on maintainability, testing, and systems that scale without constant intervention</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         

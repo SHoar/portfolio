@@ -1,7 +1,7 @@
 import Layout from './components/layout/Layout';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
-import Expertise from './components/sections/Expertise';
+import SideProjects from './components/sections/SideProjects';
 import Portfolio from './components/sections/Portfolio';
 import Talks from './components/sections/Talks';
 import Contact from './components/sections/Contact';
@@ -11,8 +11,8 @@ function App() {
     <Layout>
       <Hero />
       <About />
-      <Expertise />
       <Portfolio />
+      <SideProjects />
       <Talks />
       <Contact />
     </Layout>
