@@ -39,7 +39,7 @@ const sideProjects: SideProject[] = [
     description: "Full-stack financial analysis platform with data visualization, account aggregation, and automated insights. Built with modern React frontend and Python backend.",
     technologies: ["React", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Docker", "TradingView", "Celery", "Redis", "DigitalOcean"],
     impact: "Building comprehensive financial tracking with real-time analytics, automated categorization, and trend analysis to provide actionable insights into spending patterns.",
-    liveUrl: "https://fap.seanhoar.com",
+    liveUrl: "https://fa.seanhoar.com",
     githubUrl: undefined, // Private for now
     highlights: [
       "Real-time financial data visualization",
