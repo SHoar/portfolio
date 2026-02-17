@@ -81,7 +81,7 @@ const sideProjects: SideProject[] = [
     liveUrl: undefined, // Resume and job seeker portal, no public URL
     githubUrl: "private", // Update if you make it public
     highlights: [
-      "Integrated Exa AI for intelligent content discovery"
+      "End-to-end AI resume pipeline: review --> guided/automatic rewrite", "Multi-source job aggregation with resilience and deduplication", "Production-oriented LLM integration", "Search and data architecture: filter-first retrieval, FTS, Security"
     ]
   }
 ];
