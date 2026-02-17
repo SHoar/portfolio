@@ -34,7 +34,7 @@ const sideProjects: SideProject[] = [
   {
     id: 2,
     title: "Financial Analysis Platform",
-    status: "In Progress",
+    status: "Live",
     tagline: "Personal finance tracking and analytics dashboard",
     description: "Full-stack financial analysis platform with data visualization, account aggregation, and automated insights. Built with modern React frontend and Python backend.",
     technologies: ["React", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Docker", "TradingView", "Celery", "Redis", "DigitalOcean"],
@@ -68,6 +68,20 @@ const sideProjects: SideProject[] = [
       "Automated scoring algorithm for relevance",
       "Weekly digest generation and posting",
       "Curates tech articles and job postings for local community"
+    ]
+  },
+  {
+    id: 4,
+    title: "AI-Enabled Resume and Job Seeker Portal",
+    status: "Coming Soon",
+    tagline: "AI-powered resume and job seeker portal",
+    description: "AI-powered resume and job seeker portal that uses OpenAI GPT-5-nano to review, score, and rewrite resumes for matching jobs.",
+    technologies: ["Python", "FastAPI", "DigitalOcean", "OpenAI", "Natural Language Processing", "Search Engine Design", "Cloud database management"],
+    impact: "Helps job seekers and recruiters find the best matches with AI-powered resume review and job matching, intentionally saving hours to weeks of manual work.",
+    liveUrl: undefined, // Resume and job seeker portal, no public URL
+    githubUrl: "private", // Update if you make it public
+    highlights: [
+      "Integrated Exa AI for intelligent content discovery"
     ]
   }
 ];
