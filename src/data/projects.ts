@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: "AI/ML Microservice Platform",
     company: "Technology Consulting Firm",
     agency: "Enterprise Client",
-    dateRange: "June 2025 - Present",
+    dateRange: "June 2025 - February 2026",
     description: "Full-stack microservice development with React frontend and Python FastAPI backend",
     technologies: ["React", "Python", "FastAPI", "Kubernetes", "Docker", "PostgreSQL", "AWS"],
     impact: "Architecting and implementing production-grade cloud-native microservices with 99.9% uptime targets. Designed RESTful API contracts, built complex database integrations with query optimization, and established containerized deployment patterns for AI/ML workflows processing 500K+ daily transactions.",
@@ -28,18 +28,6 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Public Benefits Platform Modernization",
-    company: "Technology Consulting Firm",
-    agency: "Enterprise Client",
-    dateRange: "Sept 2022 - March 2024",
-    description: "Legacy React/Drupal migration to modern Next.js framework",
-    technologies: ["Next.js", "React 18", "JavaScript", "Node.js", "SEO", "Server-Side Rendering", "Redux"],
-    impact: "Independently executed wholesale platform migration, achieving 75% load time reduction (6s → 1.5s) through strategic SSR implementation. Eliminated $50K+ annual costs by replacing 3rd party rendering tools with custom Next.js solution. Resolved complex state hydration challenges and optimized Core Web Vitals to exceed Google benchmarks.",
-    logoUrl: images.projectLogos.publicBenefits,
-    link: ""
-  },
-  {
-    id: 3,
     title: "Recruiting Analytics Platform",
     company: "Technology Consulting Firm",
     agency: "Enterprise Client",
@@ -48,6 +36,18 @@ const projects: Project[] = [
     technologies: ["React", "TypeScript", "Material UI", "MUI X-Charts", "React Router", "Context API"],
     impact: "Architected advanced state management patterns using Reducer Context to handle complex analytics workflows, enabling real-time filtering and aggregation of recruitment metrics across multiple data dimensions while optimizing render performance.",
     logoUrl: images.projectLogos.recruitingAnalytics,
+    link: ""
+  },
+  {
+    id: 3,
+    title: "Public Benefits Platform Modernization",
+    company: "Technology Consulting Firm",
+    agency: "Enterprise Client",
+    dateRange: "Sept 2022 - March 2024",
+    description: "Legacy React/Drupal migration to modern Next.js framework",
+    technologies: ["Next.js", "React 18", "JavaScript", "Node.js", "SEO", "Server-Side Rendering", "Redux"],
+    impact: "Independently executed wholesale platform migration, achieving 75% load time reduction (6s → 1.5s) through strategic SSR implementation. Eliminated $50K+ annual costs by replacing 3rd party rendering tools with custom Next.js solution. Resolved complex state hydration challenges and optimized Core Web Vitals to exceed Google benchmarks.",
+    logoUrl: images.projectLogos.publicBenefits,
     link: ""
   },
   {
