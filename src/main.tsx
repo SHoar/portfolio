@@ -2,6 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+import { injectAdSenseScriptIfEnabled } from './config/ads'
+
+injectAdSenseScriptIfEnabled()
 
 // Add Font Awesome
 const link = document.createElement('link');

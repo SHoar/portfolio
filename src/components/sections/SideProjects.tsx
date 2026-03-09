@@ -50,7 +50,7 @@ const SideProjects: React.FC = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {sideProjects.map((project) => (
+          {[...sideProjects].reverse().map((project) => (
             <SideProjectCard
               key={project.id}
               title={project.title}
@@ -59,8 +59,8 @@ const SideProjects: React.FC = () => {
               description={project.description}
               technologies={project.technologies}
               impact={project.impact}
-              liveUrl={project.liveUrl}
-              githubUrl={project.githubUrl}
+              liveUrl={project.liveUrl || undefined}
+              githubUrl={project.githubUrl || undefined}
               highlights={project.highlights}
             />
           ))}

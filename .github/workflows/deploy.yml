@@ -35,6 +35,8 @@ jobs:
         run: npm ci
       
       - name: Build
+        env:
+          VITE_ADS_ENABLED: ${{ vars.VITE_ADS_ENABLED || 'false' }}
         run: npm run build
       
       - name: Setup Pages

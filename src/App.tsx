@@ -5,6 +5,8 @@ import SideProjects from './components/sections/SideProjects';
 import Portfolio from './components/sections/Portfolio';
 import Talks from './components/sections/Talks';
 import Contact from './components/sections/Contact';
+import SupportSection from './components/sections/SupportSection';
+import { adsEnabled } from './config/ads';
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <SideProjects />
       <Talks />
       <Contact />
+      {adsEnabled && <SupportSection />}
     </Layout>
   );
 }

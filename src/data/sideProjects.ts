@@ -78,7 +78,7 @@ const sideProjects: SideProject[] = [
     description: "AI-powered resume and job seeker portal that uses OpenAI GPT-5-nano to review, score, and rewrite resumes for matching jobs.",
     technologies: ["Python", "FastAPI", "DigitalOcean", "OpenAI", "Natural Language Processing", "Search Engine Design", "Cloud database management"],
     impact: "Helps job seekers and recruiters find the best matches with AI-powered resume review and job matching, intentionally saving hours to weeks of manual work.",
-    liveUrl: undefined, // Resume and job seeker portal, no public URL
+    liveUrl: "https://job-search-pipelines-jahpr.ondigitalocean.app", // Resume and job seeker portal, no public URL
     githubUrl: "private", // Update if you make it public
     highlights: [
       "End-to-end AI resume pipeline: review --> guided/automatic rewrite", "Multi-source job aggregation with resilience and deduplication", "Production-oriented LLM integration", "Search and data architecture: filter-first retrieval, FTS, Security"

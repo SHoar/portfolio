@@ -94,7 +94,7 @@ const SideProjectCard: React.FC<SideProjectCardProps> = ({
 
         {/* Action Buttons */}
         <div className="flex flex-wrap gap-3 pt-4 border-t border-secondary-200 dark:border-secondary-700">
-          {liveUrl && (
+          {liveUrl && liveUrl !== undefined && (
             <a 
               href={liveUrl}
               target="_blank"
@@ -105,7 +105,7 @@ const SideProjectCard: React.FC<SideProjectCardProps> = ({
               <span>View Live</span>
             </a>
           )}
-          {githubUrl && (
+          {githubUrl && githubUrl !== undefined && (
             <a 
               href={githubUrl}
               target="_blank"
