@@ -24,6 +24,9 @@ const About: React.FC = () => {
         
         <div className="max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-12">
+            <p className="text-lg md:text-xl text-secondary-800 dark:text-secondary-100 leading-relaxed mb-6">
+              I work as an <strong className="text-secondary-900 dark:text-white">AI-native implementation partner</strong> for teams that want automation and copilots shipped — not just advised on. My background is in hands-on engineering; I scope, build, and integrate so you see results in weeks, not quarters.
+            </p>
             <div className="space-y-6 text-secondary-800 dark:text-secondary-100">
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="text-lg md:text-xl leading-relaxed">
@@ -97,7 +100,7 @@ const About: React.FC = () => {
             Let's Connect
           </a>
           <p className="mt-6 text-secondary-700 dark:text-secondary-300 text-lg max-w-2xl mx-auto">
-            Interested in collaborating on your next innovative project? I'd love to hear from you!
+            Interested in AI automation or a discovery call? I'd love to hear from you.
           </p>
         </div>
       </div>

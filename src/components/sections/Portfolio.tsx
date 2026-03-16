@@ -7,10 +7,10 @@ const Portfolio: React.FC = () => {
     <section id="portfolio" className="py-20 bg-white dark:bg-secondary-900 transition-colors duration-300">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="section-heading">Professional Experience</h2>
+          <h2 className="section-heading text-secondary-900 dark:text-white">Technical Portfolio</h2>
           <div className="section-divider"></div>
           <p className="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto mt-4">
-            Complex technical challenges solved across distributed systems, cloud infrastructure, and scalable architectures
+            Full chronological experience — for hiring managers and IC roles. Complex technical challenges across distributed systems, cloud infrastructure, and scalable architectures.
           </p>
         </div>
         
