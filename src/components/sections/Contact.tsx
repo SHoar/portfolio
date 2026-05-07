@@ -40,10 +40,10 @@ const Contact: React.FC = () => {
                 Email Me
               </h3>
               <a 
-                href="mailto:sean.hoar@gmail.com" 
+                href="mailto:me@seanhoar.com" 
                 className="text-2xl md:text-3xl font-bold text-gradient hover:opacity-80 transition-opacity duration-300"
               >
-                Sean.Hoar@Gmail.com
+                me@seanhoar.com
               </a>
             </div>
             
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
                 or just want to connect — I'd love to hear from you!
               </p>
               <a 
-                href="mailto:sean.hoar@gmail.com" 
+                href="mailto:me@seanhoar.com" 
                 className="btn btn-primary"
               >
                 <svg 
