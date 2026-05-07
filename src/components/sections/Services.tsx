@@ -11,10 +11,10 @@ const Services: React.FC = () => {
 
       <div className="container relative z-10">
         <div className="text-center mb-16">
-          <h2 className="section-heading text-secondary-900 dark:text-white">AI Consulting Services</h2>
+          <h2 className="section-heading text-secondary-900 dark:text-white">How We Work Together</h2>
           <div className="section-divider"></div>
           <p className="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto mt-4">
-            Productized engagements with clear deliverables and outcomes
+            Start with a low-risk readiness check, then a focused pilot—no long-term contract required
           </p>
         </div>
 
@@ -54,9 +54,9 @@ const Services: React.FC = () => {
 
         <div className="max-w-3xl mx-auto">
           <div className="glass-card p-6 md:p-8 border-l-4 border-primary-500 dark:border-primary-400">
-            <h3 className="text-lg font-bold text-secondary-900 dark:text-white mb-3">How I Build</h3>
+            <h3 className="text-lg font-bold text-secondary-900 dark:text-white mb-3">Flagship offer</h3>
             <p className="text-secondary-700 dark:text-secondary-300 text-sm leading-relaxed">
-              I focus on outcomes and integration first. Tech choices (agents, RAG, LLMs, your stack) follow from the problem — with an emphasis on maintainability, security, and clear success metrics. No tech-stack theater; just shipping.
+              Our most popular path is <strong className="text-secondary-900 dark:text-white">Inbox-to-Invoice Automation in 30 Days</strong>—one clear outcome, fixed fee, and results you can measure in hours saved and faster turnaround.
             </p>
           </div>
         </div>

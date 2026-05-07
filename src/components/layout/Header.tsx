@@ -11,8 +11,9 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: 'Services', href: '#services', current: false },
-  { name: 'Case Studies', href: '#case-studies', current: false },
+  { name: 'Outcomes', href: '#case-studies', current: false },
   { name: 'About', href: '#about', current: false },
+  { name: 'FAQ', href: '#faq', current: false },
   { name: 'Portfolio', href: '#portfolio', current: false },
   { name: 'Talks', href: '#talks', current: false },
   { name: 'Contact', href: '#contact', current: false },
@@ -74,7 +75,7 @@ export default function Header() {
                     href="#page-top" 
                     className="text-xl font-bold hover:opacity-80 transition-opacity duration-300"
                   >
-                    <span className="text-gradient">Sean Hoar</span>
+                    <span className="text-gradient">SH Innovation LLC</span>
                   </a>
                 </div>
               </div>

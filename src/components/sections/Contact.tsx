@@ -3,20 +3,26 @@ import React, { useState, useCallback } from 'react';
 const CONTACT_EMAIL = 'sean.hoar@gmail.com';
 
 const Contact: React.FC = () => {
-  const [problemSummary, setProblemSummary] = useState('');
-  const [teamSize, setTeamSize] = useState('');
+  const [name, setName] = useState('');
+  const [businessName, setBusinessName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [mostTime, setMostTime] = useState('');
   const [toolsUsed, setToolsUsed] = useState('');
 
   const buildMailtoUrl = useCallback(() => {
-    const subject = encodeURIComponent('AI Implementation – Discovery Call Request');
+    const subject = encodeURIComponent('Workflow Readiness Call Request');
     const bodyParts = [
-      problemSummary && `Problem summary:\n${problemSummary}`,
-      teamSize && `Team size: ${teamSize}`,
-      toolsUsed && `Tools used:\n${toolsUsed}`,
+      name && `Name: ${name}`,
+      businessName && `Business: ${businessName}`,
+      email && `Email: ${email}`,
+      phone && `Phone: ${phone}`,
+      mostTime && `What takes your team the most time every week?\n${mostTime}`,
+      toolsUsed && `Which tools do you use today?\n${toolsUsed}`,
     ].filter(Boolean);
     const body = encodeURIComponent(bodyParts.join('\n\n'));
     return `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-  }, [problemSummary, teamSize, toolsUsed]);
+  }, [name, businessName, email, phone, mostTime, toolsUsed]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,79 +39,94 @@ const Contact: React.FC = () => {
       
       <div className="container relative z-10">
         <div className="text-center mb-12">
-          <h2 className="section-heading">Book a Discovery Call</h2>
+          <h2 className="section-heading">Book a Free Workflow Readiness Call</h2>
           <div className="section-divider"></div>
           <p className="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto mt-6">
-            Let's discuss how we can work together on AI automation and implementation for your organization
+            Share a few details below. I'll respond within one business day to schedule your 30-minute workflow call—no obligation.
           </p>
         </div>
         
         <div className="max-w-3xl mx-auto">
           <div className="glass-card p-8 md:p-12">
-            <div className="mb-8 text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-primary mb-6">
-                <svg 
-                  className="w-10 h-10 text-white" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2} 
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" 
-                  />
-                </svg>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-secondary-900 dark:text-white">
-                Quick intake
-              </h3>
-              <p className="text-secondary-700 dark:text-secondary-300 mb-6">
-                Share a bit about your situation and we'll open your email with everything pre-filled — just hit send.
-              </p>
-            </div>
-
             <form onSubmit={handleSubmit} className="space-y-6 text-left">
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="contact-name" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
+                    Name
+                  </label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    className="w-full px-4 py-3 rounded-lg border border-secondary-200 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                    placeholder="Your name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="business-name" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
+                    Business name
+                  </label>
+                  <input
+                    id="business-name"
+                    type="text"
+                    className="w-full px-4 py-3 rounded-lg border border-secondary-200 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                    placeholder="Your business"
+                    value={businessName}
+                    onChange={(e) => setBusinessName(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="contact-email" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
+                    Email
+                  </label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    className="w-full px-4 py-3 rounded-lg border border-secondary-200 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                    placeholder="you@yourbusiness.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="contact-phone" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
+                    Phone
+                  </label>
+                  <input
+                    id="contact-phone"
+                    type="tel"
+                    className="w-full px-4 py-3 rounded-lg border border-secondary-200 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                    placeholder="Best number to reach you"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+                </div>
+              </div>
               <div>
-                <label htmlFor="problem-summary" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
-                  Problem summary
+                <label htmlFor="most-time" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
+                  What takes your team the most time every week?
                 </label>
                 <textarea
-                  id="problem-summary"
+                  id="most-time"
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border border-secondary-200 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                  placeholder="e.g. Manual triage in support, slow recruiting insights, repetitive data workflows..."
-                  value={problemSummary}
-                  onChange={(e) => setProblemSummary(e.target.value)}
+                  placeholder="e.g. Chasing quotes, re-entering data, answering the same client questions, scheduling..."
+                  value={mostTime}
+                  onChange={(e) => setMostTime(e.target.value)}
                 />
               </div>
               <div>
-                <label htmlFor="team-size" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
-                  Team size
-                </label>
-                <select
-                  id="team-size"
-                  className="w-full px-4 py-3 rounded-lg border border-secondary-200 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                  value={teamSize}
-                  onChange={(e) => setTeamSize(e.target.value)}
-                >
-                  <option value="">Select...</option>
-                  <option value="1-10">1–10</option>
-                  <option value="11-50">11–50</option>
-                  <option value="51-200">51–200</option>
-                  <option value="200+">200+</option>
-                </select>
-              </div>
-              <div>
                 <label htmlFor="tools-used" className="block text-sm font-semibold text-secondary-900 dark:text-white mb-2">
-                  Tools used
+                  Which tools do you use today?
                 </label>
                 <textarea
                   id="tools-used"
                   rows={2}
                   className="w-full px-4 py-3 rounded-lg border border-secondary-200 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                  placeholder="e.g. Slack, Salesforce, internal APIs, email..."
+                  placeholder="e.g. QuickBooks, Gmail, Google Calendar, a scheduling app, spreadsheets..."
                   value={toolsUsed}
                   onChange={(e) => setToolsUsed(e.target.value)}
                 />
@@ -128,7 +149,7 @@ const Contact: React.FC = () => {
 
             <div className="mt-8 pt-8 border-t border-secondary-200 dark:border-secondary-700 text-center">
               <p className="text-secondary-700 dark:text-secondary-300 text-sm">
-                Looking for an AI implementation partner for your organization? I'd love to hear from you.
+                After you send, I'll respond within one business day to schedule your 30-minute workflow call.
               </p>
               <a 
                 href={`mailto:${CONTACT_EMAIL}`} 

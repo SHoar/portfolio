@@ -84,7 +84,7 @@ const Footer = () => {
       <div className="border-t border-white/10 bg-black/30 backdrop-blur-sm py-6">
         <div className="container">
           <p className="text-center text-sm text-secondary-400">
-            Copyright &copy; Sean Hoar {currentYear} • Built with React & Tailwind CSS
+            Copyright &copy; {currentYear}SH Innovation LLC  • Built with React & Tailwind CSS
           </p>
         </div>
       </div>

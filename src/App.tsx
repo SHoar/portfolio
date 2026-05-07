@@ -7,6 +7,7 @@ import CaseStudies from './components/sections/CaseStudies';
 import FrameworksResources from './components/sections/FrameworksResources';
 import Insights from './components/sections/Insights';
 import About from './components/sections/About';
+import FAQ from './components/sections/FAQ';
 import Portfolio from './components/sections/Portfolio';
 import SideProjects from './components/sections/SideProjects';
 import Talks from './components/sections/Talks';
@@ -25,6 +26,7 @@ function App() {
       <FrameworksResources />
       <Insights />
       <About />
+      <FAQ />
       <Portfolio />
       <SideProjects />
       <Talks />

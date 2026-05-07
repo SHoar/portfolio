@@ -24,9 +24,6 @@ const About: React.FC = () => {
         
         <div className="max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-12">
-            <p className="text-lg md:text-xl text-secondary-800 dark:text-secondary-100 leading-relaxed mb-6">
-              I work as an <strong className="text-secondary-900 dark:text-white">AI-native implementation partner</strong> for teams that want automation and copilots shipped — not just advised on. My background is in hands-on engineering; I scope, build, and integrate so you see results in weeks, not quarters.
-            </p>
             <div className="space-y-6 text-secondary-800 dark:text-secondary-100">
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="text-lg md:text-xl leading-relaxed">
@@ -34,61 +31,9 @@ const About: React.FC = () => {
                 </p>
               ))}
             </div>
-            
-            {/* Technical Strengths - IC Focus */}
-            <div className="mt-12 pt-8 border-t border-secondary-200 dark:border-secondary-700">
-              <h3 className="text-2xl font-bold text-secondary-900 dark:text-white mb-6">
-                Why I Excel as an Individual Contributor
-              </h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
-                    <div>
-                      <strong className="text-secondary-900 dark:text-white">Deep Technical Execution:</strong>
-                      <span className="text-secondary-700 dark:text-secondary-300"> Most productive when 70%+ time is spent building and solving complex problems</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
-                    <div>
-                      <strong className="text-secondary-900 dark:text-white">Autonomous Problem Solver:</strong>
-                      <span className="text-secondary-700 dark:text-secondary-300"> Proven track record of independently architecting and delivering production systems</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
-                    <div>
-                      <strong className="text-secondary-900 dark:text-white">Performance Optimization:</strong>
-                      <span className="text-secondary-700 dark:text-secondary-300"> Expertise in profiling, debugging, and eliminating bottlenecks at scale</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
-                    <div>
-                      <strong className="text-secondary-900 dark:text-white">Full-Stack Depth:</strong>
-                      <span className="text-secondary-700 dark:text-secondary-300"> React/TypeScript frontends + Python/FastAPI backends + Kubernetes deployments</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
-                    <div>
-                      <strong className="text-secondary-900 dark:text-white">Migration Specialist:</strong>
-                      <span className="text-secondary-700 dark:text-secondary-300"> Successfully modernized legacy systems with measurable performance gains</span>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-primary-600 dark:text-primary-400 text-xl">✓</span>
-                    <div>
-                      <strong className="text-secondary-900 dark:text-white">Production-Ready Code:</strong>
-                      <span className="text-secondary-700 dark:text-secondary-300"> Focus on maintainability, testing, and systems that scale without constant intervention</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p className="mt-8 text-secondary-600 dark:text-secondary-400 text-base">
+              For technical readers: I also architect and build production systems—see the portfolio and case studies below for platform work, analytics, and AI/automation builds.
+            </p>
           </div>
         </div>
         
@@ -97,10 +42,10 @@ const About: React.FC = () => {
             href="#contact" 
             className="btn btn-primary"
           >
-            Let's Connect
+            Book a Free Workflow Readiness Call
           </a>
           <p className="mt-6 text-secondary-700 dark:text-secondary-300 text-lg max-w-2xl mx-auto">
-            Interested in AI automation or a discovery call? I'd love to hear from you.
+            Ready to map where your team is losing time? I'll respond within one business day.
           </p>
         </div>
       </div>

@@ -20,15 +20,29 @@ const Hero: React.FC = () => {
           />
           <div className="intro-text space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
-              Sean Hoar
+              SH Innovation LLC
             </h1>
             <div className="section-divider"></div>
             <p className="text-xl md:text-3xl font-light text-white/90 max-w-2xl mx-auto">
-              AI Automation & Copilots for Technical Teams
+              Free Your Team from Repetitive Busywork—Without Changing the Tools You Already Use.
             </p>
             <p className="text-lg md:text-xl text-white/75 max-w-xl mx-auto mt-4">
-              I help B2B SaaS and engineering-heavy orgs replace 20+ hours/week of manual work with AI agents, RAG copilots, and workflow automation in 4–8 weeks.
+              Local AI workflow consulting for small businesses that want modern efficiency without losing their personal touch.
             </p>
+            <ul className="text-left max-w-lg mx-auto space-y-2 text-white/90 text-base md:text-lg mt-6">
+              <li className="flex items-start gap-2">
+                <span className="text-primary-300 mt-1">•</span>
+                We plug AI into your existing email, calendar, and accounting tools.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-300 mt-1">•</span>
+                Start with a 90-minute workflow assessment—no long-term contract.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-300 mt-1">•</span>
+                Designed for owners who want to save time, not replace people.
+              </li>
+            </ul>
           </div>
           
           {/* CTA Buttons */}
@@ -38,14 +52,14 @@ const Hero: React.FC = () => {
               className="btn bg-white text-primary-600 hover:bg-white/90 animate-slide-up"
               style={{ animationDelay: '0.2s' }}
             >
-              Book a Discovery Call
+              Book a Free Workflow Readiness Call
             </a>
             <a 
-              href="#portfolio" 
+              href="#case-studies" 
               className="btn btn-outline animate-slide-up"
               style={{ animationDelay: '0.3s' }}
             >
-              See Technical Portfolio
+              See Example Outcomes
             </a>
           </div>
           <p className="mt-6 text-white/70 text-sm">
