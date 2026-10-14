@@ -23,22 +23,22 @@ const Hero: React.FC = () => {
               Sean Hoar
             </h1>
             <div className="section-divider"></div>
-            <p className="text-xl md:text-3xl font-light text-white/90 max-w-2xl mx-auto">
-              Senior IC Engineer • Technical Depth Over Team Leadership
+            <p className="text-xl md:text-3xl font-light text-white/90 max-w-3xl mx-auto">
+              Software / Platform Architect • AI-Enabled &amp; Agentic-Capable
             </p>
-            <p className="text-lg md:text-xl text-white/75 max-w-xl mx-auto mt-4">
-              Technical depth in cloud-native systems, microservices, and scalable architectures
+            <p className="text-lg md:text-xl text-white/75 max-w-2xl mx-auto mt-4">
+              GitOps control planes and agent-safe systems—where LLMs are bounded tools, not autonomous operators
             </p>
           </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-10">
             <a 
-              href="#portfolio" 
+              href="#architecture" 
               className="btn btn-outline animate-slide-up"
               style={{ animationDelay: '0.2s' }}
             >
-              View My Work
+              Architecture Notes
             </a>
             <a 
               href="#contact" 

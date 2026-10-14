@@ -1,6 +1,8 @@
 # Sean Hoar's Portfolio
 
-This is my personal portfolio site showcasing my work and skills as a full-stack/front-end developer.
+Personal portfolio for **Software / Platform Architect** positioning: GitOps control planes, agent-safe systems, and AI-enabled architecture notes.
+
+Public trilogy + hire-loop artifacts: [architect-case-studies](https://github.com/SHoar/architect-case-studies).
 
 ## Technologies Used
 
