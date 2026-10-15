@@ -11,7 +11,6 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: 'About', href: '#about', current: false },
-  { name: 'Architecture', href: '#architecture', current: false },
   { name: 'Portfolio', href: '#portfolio', current: false },
   { name: 'Side Projects', href: '#side-projects', current: false },
   { name: 'Talks', href: '#talks', current: false },

@@ -14,25 +14,6 @@ export interface SideProject {
 
 const sideProjects: SideProject[] = [
   {
-    id: 0,
-    title: "Architect Case Studies (Trilogy)",
-    status: "Live",
-    tagline: "Public ADRs, RFCs, and agent eval harness for platform + agentic architecture",
-    description:
-      "Sanitized Architect Trilogy: GitOps IDP, agent-safe product patterns, and deterministic K8s companion design—plus SLO notes and a runnable permission-matrix eval demo.",
-    technologies: ["Architecture", "GitOps", "Agents", "Kubernetes", "Python", "ADRs"],
-    impact:
-      "Gives hiring loops a public, reviewable narrative of AI-enabled architect work without exposing private monorepos or personal data.",
-    liveUrl: "https://github.com/SHoar/architect-case-studies",
-    githubUrl: "https://github.com/SHoar/architect-case-studies",
-    highlights: [
-      "Three case studies with diagrams, ADRs, and company-scale notes",
-      "RFC: BFF-only + GitOps claims for agents",
-      "Runnable agent eval harness with refuse/allow outcomes",
-      "90-day focus rule and interview proof pack"
-    ]
-  },
-  {
     id: 1,
     title: "RVNUG Website",
     status: "Live",

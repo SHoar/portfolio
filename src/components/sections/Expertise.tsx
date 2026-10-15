@@ -9,34 +9,34 @@ interface ExpertiseArea {
 const Expertise: React.FC = () => {
   const expertiseAreas: ExpertiseArea[] = [
     {
-      title: "Platform & IDP Architecture",
-      description: "GitOps control planes, contract-first BFFs, and developer golden paths",
-      skills: ["Crossplane", "Argo CD", "OIDC/Keycloak", "BFF patterns", "Zod/OpenAPI contracts"]
+      title: "System Architecture",
+      description: "Designing scalable, distributed systems with focus on performance, reliability, and maintainability",
+      skills: ["Microservices", "Cloud-Native Design", "API Architecture", "Database Optimization", "Caching Strategies"]
     },
     {
-      title: "Agentic AI Systems",
-      description: "Human-in-the-loop agents with policy engines, evals, and fail-closed tool permissions",
-      skills: ["HITL gates", "Permission matrices", "MCP/skills", "LangChain/PydanticAI", "Eval harnesses"]
+      title: "Frontend Systems",
+      description: "Building sophisticated, performant user interfaces with complex state management and real-time interactions",
+      skills: ["React Architecture", "State Management", "Performance Optimization", "Component Design Patterns", "TypeScript"]
     },
     {
-      title: "Cloud-Native Delivery",
-      description: "Containerized services, mesh-ready designs, and verifiable local-to-cluster paths",
-      skills: ["Kubernetes", "Docker", "Helm", "Istio patterns", "CI/CD"]
+      title: "DevOps & Infrastructure",
+      description: "Building and optimizing deployment pipelines, containerization, and infrastructure-as-code solutions",
+      skills: ["Kubernetes", "Docker", "CI/CD Pipelines", "AWS", "Jenkins", "Infrastructure Automation"]
     },
     {
-      title: "Secure Full-Stack",
-      description: "SPA + API systems that keep secrets out of the browser and defaults fail closed",
-      skills: ["React/TypeScript", "FastAPI", "Go CLIs", "httpOnly sessions", "Threat models"]
+      title: "Backend Development",
+      description: "Architecting robust backend systems with focus on scalability, security, and data integrity",
+      skills: ["Python", "FastAPI", "Node.js", "Express", "PostgreSQL", "RESTful APIs"]
     },
     {
-      title: "Architecture Practice",
-      description: "ADRs, RFCs, and docs that humans and coding agents can execute against",
-      skills: ["ADRs", "RFCs", "AGENTS.md", "C4 diagrams", "Runbooks"]
+      title: "Technical Problem-Solving",
+      description: "Tackling complex technical challenges in large-scale systems and legacy code modernization",
+      skills: ["System Debugging", "Performance Profiling", "Legacy Modernization", "Compliance Integration", "Architectural Refactoring"]
     },
     {
-      title: "Operational Excellence",
-      description: "SLOs, failure domains, and cost-aware AI/platform operations",
-      skills: ["SLIs/SLOs", "Error budgets", "Cost-per-task", "Observability", "Degrade paths"]
+      title: "Full-Stack Excellence",
+      description: "End-to-end ownership of features spanning frontend, backend, and infrastructure layers",
+      skills: ["Full-Stack Development", "Cross-Layer Optimization", "Feature Ownership", "Technical Decisions"]
     }
   ];
 
@@ -47,7 +47,7 @@ const Expertise: React.FC = () => {
           <h2 className="section-heading">Technical Expertise</h2>
           <div className="section-divider"></div>
           <p className="text-lg text-secondary-600 dark:text-secondary-300 max-w-2xl mx-auto mt-4">
-            Platform, agentic, and cloud-native competencies for AI-enabled software architecture roles
+            Deep technical competencies in modern systems design, cloud architecture, and software engineering excellence
           </p>
         </div>
 
